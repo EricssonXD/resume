@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import styles from './header.module.scss';
 import { Link, NavLink } from 'react-router-dom';
+import IconTransparentPng from '../../assets/icon/icon_transparent.png';
 
 export interface HeaderProps {
     className?: string;
@@ -13,7 +14,9 @@ export interface HeaderProps {
 export const Header = ({ className }: HeaderProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <a href="/">Logo</a>
+            <a href="/">
+                <img src={IconTransparentPng} alt="" className={styles.img1} />
+            </a>
             <div className={styles.menu}>
                 <NavLink
                     to="/"
