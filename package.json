@@ -25,5 +25,6 @@
     "typescript": "^5.5.3",
     "vite": "^5.3.3",
     "vite-plugin-svgr": "^4.2.0"
-  }
+  },
+  "homepage": "https://ericssonxd.github.io/resume/"
 }
