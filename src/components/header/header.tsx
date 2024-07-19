@@ -1,7 +1,8 @@
 import classNames from 'classnames';
 import styles from './header.module.scss';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import IconTransparentPng from '../../assets/icon/icon_transparent.png';
+
 
 export interface HeaderProps {
     className?: string;
@@ -14,23 +15,23 @@ export interface HeaderProps {
 export const Header = ({ className }: HeaderProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <a href="/">
+            <NavLink to="/">
                 <img src={IconTransparentPng} alt="" className={styles.img1} />
-            </a>
+            </NavLink>
             <div className={styles.menu}>
                 <NavLink
                     to="/"
-                    className={({ isActive }) => classNames({ [styles.active]: isActive })}
+                    className={({ isActive }) => classNames(styles.navLink, { [styles.active]: isActive, [styles.inactive]: !isActive })}
                 >
                     Home
                 </NavLink>
                 <NavLink
                     to="/about"
-                    className={({ isActive }) => classNames({ [styles.active]: isActive })}
+                    className={({ isActive }) => classNames(styles.navLink, { [styles.active]: isActive, [styles.inactive]: !isActive })}
                 >
                     About
                 </NavLink>
             </div>
-        </div>
+        </div >
     );
 };

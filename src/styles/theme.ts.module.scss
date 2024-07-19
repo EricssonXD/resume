@@ -1,0 +1,28 @@
+@import '@styles/theme.module.scss';
+
+:export {
+    primary: $primary;
+    primary_content: $primary-content;
+    primary_dark: $primary-dark;
+    primary_light: $primary-light;
+
+    secondary: $secondary;
+    secondary_content: $secondary-content;
+    secondary_dark: $secondary-dark;
+    secondary_light: $secondary-light;
+
+    background: $background;
+    foreground: $foreground;
+    border: $border;
+
+    copy: $copy;
+    copy_light: $copy-light;
+    copy_lighter: $copy-lighter;
+
+    success: $success;
+    warning: $warning;
+    error: $error;
+    success_content: $success-content;
+    warning_content: $warning-content;
+    error_content: $error-content;
+}
