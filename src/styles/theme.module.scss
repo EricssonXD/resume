@@ -57,7 +57,7 @@ $mobile-width: 600px;
     $value: ();
     @for $i from 1 through $steps {
         $num: ($i + max($i - 4, 0))* 5px;
-        $calOpacity: 1/$steps*$i + 0.5;
+        $calOpacity: 1/$steps*$i + 0.2; // +0.5 to offset the opacity
 
         $theShadow: drop-shadow(0 0 $num rgba($color, $calOpacity));
         $value: append($value, $theShadow, space)
