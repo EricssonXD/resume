@@ -25,7 +25,8 @@
     // color: $primary-content;
     font-weight: 600;
     color: $copy;
-    text-shadow: text-shadow($primary-dark);
+    // text-shadow: text-shadow($primary-dark);
+    filter: text-shadow-filter($primary-dark, 1, 3);
 
     &:hover {
         scale: 1.2;
@@ -33,9 +34,12 @@
 }
 
 .inactive.navLink {
+    overflow: visible;
     &:hover {
-        text-shadow: text-shadow($secondary-dark);
         scale: 1.2;
+        // text-shadow: text-shadow($secondary-dark, 1);
+        filter: text-shadow-filter($secondary-dark, 1, 3);
+
     }
 }
 
@@ -44,7 +48,7 @@
     filter:
     drop-shadow(0px 0px 1px $copy) drop-shadow(0px 0px 1px $copy) drop-shadow(0px 0px 1px $copy)
     drop-shadow(0 0 5px rgb(from $primary r g b / 0%)) drop-shadow(0 0 10px rgb(from $primary-dark r g b / 0%)) drop-shadow(0 0 15px rgb(from $primary-dark r g b / 0%));
-    transition: all 0.6s ease;
+    transition: all 0.6s ease-out;
     transition-property: all;
 
     &:hover{
@@ -59,5 +63,5 @@
 
 .navLink {
     color: $copy;
-    transition: all 1s ease;
+    transition: all 0.6s ease-out;
 }

@@ -14,7 +14,7 @@ export interface HeaderProps {
  */
 export const Header = ({ className }: HeaderProps) => {
     return (
-        <div className={classNames(styles.root, className)}>
+        <nav className={classNames(styles.root, className)} id="topNavBar">
             <NavLink to="/">
                 <img src={IconTransparentPng} alt="" className={styles.img1} />
             </NavLink>
@@ -32,6 +32,6 @@ export const Header = ({ className }: HeaderProps) => {
                     About
                 </NavLink>
             </div>
-        </div >
+        </nav >
     );
 };
