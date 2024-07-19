@@ -3,7 +3,9 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { routes } from './routes';
 
 function App() {
-    const router = useMemo(() => createBrowserRouter(routes), []);
+    const router = useMemo(() => createBrowserRouter(routes, {
+  basename: "/resume",
+}), []);
 
     return <RouterProvider router={router} />;
 }
