@@ -55,8 +55,8 @@ $mobile-width: 600px;
 @function text-shadow-filter($color, $opacity: 1, $steps: 5, $opacityOffset: 0.2,) {
     $value: ();
     @for $i from 1 through $steps {
-        $num: ($i + max($i - 4, 0))* 5px;
-        $calOpacity: (1-$opacityOffset)/$steps*$i + $opacityOffset; // +0.5 to offset the opacity
+        $num: calc(($i + max($i - 4, 0))* 5px);
+        $calOpacity: calc((1 - $opacityOffset) / $steps * $i + $opacityOffset); // +0.5 to offset the opacity
 
         $theShadow: drop-shadow(0 0 $num rgba($color, $calOpacity));
         $value: append($value, $theShadow, space)
