@@ -5,7 +5,7 @@ import { About } from './components/about/about';
 
 export const routes: RouteObject[] = [
     {
-        path: '',
+        path: '/',
         element: <SiteWrapper />,
         children: [
             { index: true, element: <HomePage /> },
