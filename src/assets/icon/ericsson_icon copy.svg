@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1">
+    <g class="layer">
+        <path d="
+            M50 8
+            L43 8
+            L20 46
+            L47 93
+            L57 93
+            L47 76
+            L28 44
+            z
+        " fill="url(#highlight)" />
+        <path d="
+            M50 8
+            L28 44
+            L47 76
+            L79 76
+            L70 60
+            L55 60
+            L48 48
+            L72 48
+            L72 34
+            L48 34
+            L55 23
+            L70 23
+            L79 8
+            z
+        " fill="url(#main)" />
+        <path d="
+            M20 46
+            L15 46
+            L42 93
+            L47 93
+            z
+        " fill="#19202b" />
+    </g>
+    <defs>
+        <linearGradient id="highlight" x1="0" x2="0" y1=".3" y2=".6">
+            <stop id="prefix__jq_stop_7363" offset="0" stop-color="#5dd9ff" />
+            <stop id="prefix__jq_stop_2831" offset="1" stop-color="#3ba8fe" />
+        </linearGradient>
+        <radialGradient id="main" cx="0" cy="0.5" fx="0" fy="0.5" r="0.9" spreadMethod="pad">
+            <stop id="jq_stop_7363" offset="0" stop-color="#33496d" />
+            <stop id="jq_stop_7363" offset="0.4" stop-color="#24344d" />
+            <stop id="jq_stop_2831" offset="0.9" stop-color="#10141d" />
+        </radialGradient>
+    </defs>
+</svg>
