@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1">
-    <g class="layer">
+    <g class="layer" filter="url(#prefix__sofGlow)">
         <path d="
             M50 8
             L43 8
             L20 46
-            L47 93
+            L15 46
+            L42 93
             L57 93
             L47 76
-            L28 44
+            L40 44
             z
         " fill="url(#highlight)" />
         <path d="
@@ -45,5 +46,18 @@
             <stop id="jq_stop_7363" offset="0.4" stop-color="#24344d" />
             <stop id="jq_stop_2831" offset="0.9" stop-color="#10141d" />
         </radialGradient>
+        <filter id="prefix__sofGlow" height="300%" width="300%" x="-75%" y="-75%">
+            <feGaussianBlur stdDeviation="0.2" result="aa" />
+            <feMorphology operator="dilate" radius="3" in="SourceAlpha" result="thicken" />
+            <feGaussianBlur in="thicken" stdDeviation="2" result="blurred" />
+            <feFlood flood-color="#fff" result="glowColor" />
+            <feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+            <feMerge>
+                <feMergeNode in="softGlow_colored" />
+                <!-- <feMergeNode in="SourceGraphic" /> -->
+                <feMergeNode in="aa" />
+
+            </feMerge>
+        </filter>
     </defs>
 </svg>

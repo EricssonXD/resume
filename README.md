@@ -1,5 +1,6 @@
 <div align="center" style="display: flex; align-items: center; justify-content: center;">
-    <img height="100" src="./src/assets/icon/ericsson_icon copy.svg">
+    <img height="128" src="./src/assets/icon/ericsson_icon copy.svg"></img>
+    <img height="100" src="./src/assets/icon/ericsson_icon_glow.svg">
     <img height="100" src="./src/assets/icon/icon_transparent_glowing.png">
     <h1 style="padding-left: 10px;">Ericsson's Portfolio</h1>
 </div>
