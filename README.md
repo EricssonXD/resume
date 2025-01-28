@@ -1,26 +1,38 @@
-<div align="center" style="display: flex; align-items: center; justify-content: center;">
-    <img height="128" src="./src/assets/icon/ericsson_icon copy.svg"></img>
-    <img height="100" src="./src/assets/icon/ericsson_icon_glow.svg">
-    <img height="100" src="./src/assets/icon/icon_transparent_glowing.png">
-    <h1 style="padding-left: 10px;">Ericsson's Portfolio</h1>
-</div>
+# sv
 
----
-I built this Portfolio website with Vite and Codux
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-<!-- ### Available Scripts
+## Creating a project
 
-In the project directory, you can run:
+If you're seeing this, you've probably already done this step. Congrats!
 
-### `npm run build`
+```bash
+# create a new project in the current directory
+npx sv create
 
-Build the application in production mode into a folder named `dist`. This folder can be served using any HTTP server.
+# create a new project in my-app
+npx sv create my-app
+```
 
-### `npm run dev`
+## Developing
 
-Start dev server, aliases: `vite dev`, `vite serve`.\
-Open [http://127.0.0.1:5173/](http://127.0.0.1:5173/) to view it in the browser.
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-### `npm run preview`
+```bash
+npm run dev
 
-Boots up a local static web server that serves the files from dist at [`http://localhost:4173`](http://localhost:4173) . It's an easy way to check if the production build looks OK in your local environment. -->
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
